@@ -10,8 +10,8 @@ export class UserController {
 
 
   @Post()
-  createUser(@Body(ValidationPipe) newUser: CreateUserDto){
-    return this.UserService.createUser(newUser.name, newUser.edad, newUser.apellido,  newUser.telefono)
+  createUser(@Body() newUser: CreateUserDto){
+    return this.UserService.createUser(newUser.name, newUser.age, newUser.lastName,  newUser.phone)
   }
   
 }
