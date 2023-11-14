@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { v4 } from 'uuid';
+
 import { CreateUserDto } from './dto/user.dto';
 
 export type User = {
