@@ -10,14 +10,14 @@ export type Company = {
 
 @Injectable()
 export class CompanyService {
-  private companys: Company[] = [];
+  private companies: Company[] = [];
 
   getAll() {
-    return this.companys;
+    return this.companies;
   }
 
   getOne(id: string): Company {
-    return this.companys.find((company) => company.id === id);
+    return this.companies.find((company) => company.id === id);
   }
 
   create(name: string, email: string, phone: number): void {
@@ -27,7 +27,7 @@ export class CompanyService {
       email,
       phone,
     };
-    this.companys.push(company);
-    console.log(this.companys);
+    this.companies.push(company);
+    console.log(this.companies);
   }
 }
