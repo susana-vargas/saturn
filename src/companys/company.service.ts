@@ -31,6 +31,7 @@ export class CompanyService {
     };
     this.companies.push(company);
     console.log(this.companies);
+    return;
   }
 
   update(id: string, update: CreateCompanyDto): void {
